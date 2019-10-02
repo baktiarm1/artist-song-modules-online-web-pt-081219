@@ -2,9 +2,10 @@ require 'pry'
 
 
 class Artist
+  extend Memorable, Findable
   attr_accessor :name
   attr_reader :songs
-extend Memorable, Findable
+
   @@artists = []
 
   def initialize
